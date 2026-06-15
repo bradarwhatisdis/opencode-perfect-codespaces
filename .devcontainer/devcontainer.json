@@ -1,0 +1,15 @@
+{
+  "name": "OpenCode & Oh-My-OpenAgent Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+
+  "remoteUser": "vscode",
+
+  // Eksekusi script setup mandiri setelah container siap
+  "postCreateCommand": "bash .devcontainer/setup-agent.sh"
+}
